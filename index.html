@@ -6,21 +6,27 @@
 </head>
 <body>
   <header>
+    <a>
       <img src="img/logo.svg" width="163" height="35" alt="Логотип Device">
+    </a>
     <nav>
       <div>
-        <!-- Здесь будет форма поиска -->
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+          <input type="text" id="search-field" name="search" placeholder="Поиск по сайту">
+          <button type="button">Найти</button>
+        </form>
       </div>
       <ul>
         <li>
-          <a href="#">Войти</a>
+          <a href="login.html">Войти</a>
         </li>
       </ul>
       <p>
-        <a href="#">Сравнить</a>
+        <a href="compare.html">Сравнить</a>
       </p>
       <p>
-        <a href="#">Корзина</a>
+        <a href="cart.html">Корзина</a>
       </p>
       <ul>
         <li>
@@ -172,7 +178,7 @@
     </section>
   </main>
   <footer>
-    <a href="#">
+    <a>
       <img src="img/logo-footer.png" width="163" height="35" alt="Логотип Device">
     </a>
     <ul>
@@ -192,36 +198,59 @@
     <ul>
       <li>
         <a href="#">
-          Facebook
+          <span class="visually-hidden">Мы в Facebook</span>
           <img src="img/icon-facebook.svg" width="32" height="32" alt="Мы в Facebook">
         </a>
       </li>
       <li>
         <a href="#">
-          Instagram
+          <span class="visually-hidden">Мы в Instagram</span>
           <img src="img/icon-instagram.svg" width="32" height="32" alt="Мы в Instagram">
         </a>
       </li>
       <li>
         <a href="#">
-          Twitter
+          <span class="visually-hidden">Мы в Twitter</span>
           <img src="img/icon-twitter.svg" width="32" height="32" alt="Мы в Twitter">
         </a>
       </li>
     </ul>
     <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+      <span class="visually-hidden">Интенсив HTML и CSS Уровень 1 от HTML Academy</span>
       <img src="img/icon-htmlacademy.png" width="27" height="35" alt="Логотип HTML Academy">
     </a>
   </footer>
   <section>
     <h2>Напишите нам</h2>
-    <!-- Здесь будет форма -->
-    <button type="button">Закрыть</button>
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label for="name-field">Ваше имя:</label>
+        <input id="name-field" name="name" type="text" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="field-email">Ваш e-mail:</label>
+        <input id="field-email" name="email" type="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="field-message">Текст письма:</label>
+        <textarea id="field-message" name="message" id="" cols="10" rows="5" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button">
+      <span class="visually-hidden">Закрыть</span>
+      X
+    </button>
   </section>
   <section>
     <h2>Как до нас добраться</h2>
-    <img src="img/map-popup.jpg" alt="Адрес организации: г. Москва, ул. Строителей, 15">
-    <button type="button">Закрыть</button>
+    <p>
+      <img src="img/map-popup.jpg" width="960" height="559" alt="Адрес организации: г. Москва, ул. Строителей, 15">
+    </p>
+    <button type="button">
+      <span class="visually-hidden">Закрыть</span>
+      X
+    </button>
   </section>
 </body>
 </html>

@@ -11,7 +11,11 @@
     </a>
     <nav>
       <div>
-        <!-- Здесь будет форма поиска -->
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+          <input type="text" id="search-field" name="search" placeholder="Поиск по сайту">
+          <button type="button">Найти</button>
+        </form>
       </div>
       <ul>
         <li>
@@ -53,8 +57,57 @@
       <li>Моноподы для селфи</li>
     </ul>
     <section>
-      <h2>Фильтры</h2>
-      <!-- Здесь будет форма -->
+      <h2>Фильтр:</h2>
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <p>
+            <label for="field-min-price">от </label><input id="field-min-price" name="min-price" type="number" value="" placeholder="0">
+          </p>
+          <p>
+            <label for="field-max-price">до </label><input id="field-max-price" name="max-price" type="number" value="" placeholder="5000">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <input id="filter-color-black" name="color-black" type="checkbox" checked>
+              <label for="filter-color-black">Черный</label>
+            </li>
+            <li>
+              <input id="filter-color-white" name="color-white" type="checkbox">
+              <label for="filter-color-white">Белый</label>
+            </li>
+            <li>
+              <input id="filter-color-blue" name="color-blue" type="checkbox" checked>
+              <label for="filter-color-blue">Синий</label>
+            </li>
+            <li>
+              <input id="filter-color-red" name="color-red" type="checkbox" checked>
+              <label for="filter-color-red">Красный</label>
+            </li>
+            <li>
+              <input id="filter-color-pink" name="color-pink" type="checkbox">
+              <label for="filter-color-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <input id="filter-bluetooth-on" name="bluetooth" value="on" type="radio" checked>
+              <label for="filter-bluetooth-on">Есть</label>
+            </li>
+            <li>
+              <input id="filter-bluetooth-off" name="bluetooth" value="off" type="radio">
+              <label for="filter-bluetooth-off">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
     <section>
       <h2>Список товаров</h2>
@@ -62,34 +115,34 @@
       <a href="#">По цене</a>
       <a href="#">По типу</a>
       <a href="#">По популярности</a>
-      <a href="#">По возрастанию</a>
-      <a href="#">По убыванию</a>
+      <a href="#"><span class="visually-hidden">По возрастанию</span></a>
+      <a href="#"><span class="visually-hidden">По убыванию</span></a>
       <ul>
         <li>
-          <h3>Любительская селфи-палка</h3>
+          <h3><a href="#">Любительская селфи-палка</a></h3>
           <p>500 руб.</p>
-          <img src="img/product-1.jpg" width="360" height="540" alt="Любительская селфи-палка">
+          <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
         <li>
-          <h3>Профессиональная селфи-палка </h3>
+          <h3><a href="#">Профессиональная селфи-палка</a></h3>
           <p>1 500 руб.</p>
-          <img src="img/product-2.jpg" width="360" height="540" alt="Профессиональная селфи-палка ">
+          <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
         <li>
-          <h3>Непотопляемая селфи-палка</h3>
+          <h3><a href="#">Непотопляемая селфи-палка</a></h3>
           <p>2 500 руб.</p>
-          <img src="img/product-3.jpg" width="360" height="540" alt="Непотопляемая селфи-палка">
+          <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
         <li>
-          <h3>Селфи-палка «Следуй за мной»</h3>
+          <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
           <p>4 900 руб.</p>
-          <img src="img/product-4.jpg" width="360" height="540" alt="Селфи-палка «Следуй за мной»">
+          <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
           <button type="button">В корзину</button>
           <button type="button">Добавить к сравнению</button>
         </li>
@@ -104,7 +157,7 @@
     </section>
   </main>
   <footer>
-    <a href="#">
+    <a href="index.html">
       <img src="img/logo-footer.png" width="163" height="35" alt="Логотип Device">
     </a>
     <ul>
@@ -127,24 +180,25 @@
     <ul>
       <li>
         <a href="#">
-          Facebook
+          <span class="visually-hidden">Мы в Facebook</span>
           <img src="img/icon-facebook.svg" width="32" height="32" alt="Мы в Facebook">
         </a>
       </li>
       <li>
         <a href="#">
-          Instagram
+          <span class="visually-hidden">Мы в Instagram</span>
           <img src="img/icon-instagram.svg" width="32" height="32" alt="Мы в Instagram">
         </a>
       </li>
       <li>
         <a href="#">
-          Twitter
+          <span class="visually-hidden">Мы в Twitter</span>
           <img src="img/icon-twitter.svg" width="32" height="32" alt="Мы в Twitter">
         </a>
       </li>
     </ul>
     <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+      <span class="visually-hidden">Интенсив HTML и CSS Уровень 1 от HTML Academy</span>
       <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="Логотип HTML Academy">
     </a>
   </footer>
