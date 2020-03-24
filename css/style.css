@@ -106,7 +106,6 @@ img {
 .search-form__input:focus + .search-form__button {
   display: inline-block;
 }
-<<<<<<< HEAD
 
 .user-navigation {
   list-style: none;
@@ -835,5 +834,3 @@ img {
 .modal__close-button:active {
   opacity: 0.3;
 }
-=======
->>>>>>> c5c5fa52f806e0cde6509b93a09c472b07d1bf64
