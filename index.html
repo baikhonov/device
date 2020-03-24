@@ -3,78 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <a>
-      <img src="img/logo.svg" width="163" height="35" alt="Логотип Device">
+  <header class="page-header">
+    <a class="logo">
+      <img class="logo__image" src="img/logo.svg" width="163" height="35" alt="Логотип Device">
     </a>
-    <nav>
+    <nav class="main-navigation">
       <div>
-        <form action="https://echo.htmlacademy.ru" method="GET">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
           <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-          <input type="text" id="search-field" name="search" placeholder="Поиск по сайту">
-          <button type="button">Найти</button>
+          <input class="search-form__input" type="text" id="search-field" name="search" placeholder="Поиск по сайту">
+          <button class="button search-form__button" type="button">Найти</button>
         </form>
       </div>
-      <ul>
+      <ul class="user-navigation">
         <li>
-          <a href="login.html">Войти</a>
+          <a class="user-navigation__link" href="login.html">Войти</a>
         </li>
       </ul>
       <p>
-        <a href="compare.html">Сравнить</a>
+        <a class="main-navigation__link" href="compare.html">Сравнить</a>
       </p>
       <p>
-        <a href="cart.html">Корзина</a>
+        <a class="main-navigation__link" href="cart.html">Корзина</a>
       </p>
-      <ul>
+      <ul class="site-navigation">
         <li>
-          <a href="catalog.html">Каталог</a>
+          <a class="site-navigation__link" href="catalog.html">Каталог</a>
           <ul>
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
+            <li>
+              <a href="#">Виртуальная реальность</a>
+            </li>
+            <li>
+              <a href="#">Моноподы для селфи</a>
+            </li>
+            <li>
+              <a href="#">Экшн-камеры</a>
+            </li>
+            <li>
+              <a href="#">Фитнес-браслеты</a>
+            </li>
+            <li>
+              <a href="#">Умные часы</a>
+            </li>
+            <li>
+              <a href="#">Квадрокоптеры</a>
+            </li>
           </ul>
         </li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li>
+          <a class="site-navigation__link" href="delivery.html">Доставка</a>
+        </li>
+        <li>
+          <a class="site-navigation__link" href="warranty.html">Гарантия</a>
+        </li>
+        <li>
+          <a class="site-navigation__link" href="contacts.html">Контакты</a>
+        </li>
       </ul>
     </nav>
   </header>
   <main>
-    <h1>Магазин гаджетов Device</h1>
-    <section>
-      <h2>Популярные товары</h2>
-      <ul>
-        <li>
-          <img src="img/slider-image-1.png" width="384" height="486" alt="Селфи палка">
-          <p>Делай селфи,
+    <h1 class="visually-hidden">Магазин гаджетов Device</h1>
+    <section class="popular-products">
+      <h2 class="visually-hidden">Популярные товары</h2>
+      <ul class="popular-products__slides">
+        <li class="popular-products__slide slide">
+          <img class="slide__image" src="img/slider-image-1.png" width="384" height="486" alt="Селфи палка">
+          <p class="slide__slogan">Делай селфи,<br>
             как Бен Стиллер! </p>
-            <p>01</p>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a href="#">Подробнее</a>
-            <ul>
-              <li>
-                <p>8,5 м</p>
-                <p>Длина палки</p>
+            <p class="slide__number">01</p>
+            <p class="slide__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a class="slide__link" href="#">Подробнее</a>
+            <ul class="slide__specifications-list">
+              <li class="slide__specifications-item">
+                <p class="slide__specifications-value">8,5 м</p>
+                <p class="slide__specifications-key">Длина палки</p>
               </li>
-              <li>
-                <p>5 кг</p>
-                <p>Вес палки</p>
+              <li class="slide__specifications-item">
+                <p class="slide__specifications-value">5 кг</p>
+                <p class="slide__specifications-key">Вес палки</p>
               </li>
-              <li>
-                <p>Карбон</p>
-                <p>Материал</p>
+              <li class="slide__specifications-item">
+                <p class="slide__specifications-value">Карбон</p>
+                <p class="slide__specifications-key">Материал</p>
               </li>
             </ul>
           </li>
-        <li>
-          <img src="img/slider-image-2.png" width="345" height="485" alt="Фитнес-браслет">
+        <li class="popular-products__slide slide>
+          <img class="slide__image" src="img/slider-image-2.png" width="345" height="485" alt="Фитнес-браслет">
           <p>Худеем
             правильно!</p>
           <p>02</p>
@@ -87,7 +108,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="popular-products__slide>
           <img src="img/slider-image-3.png" width="526" height="334" alt="Квадрокоптер">
           <p>Порхает как бабочка, жалит как пчела!</p>
           <p>03</p>

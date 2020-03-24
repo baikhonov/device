@@ -1,0 +1,101 @@
+/* Gillroy Light */
+@font-face {
+  font-family: 'Gillroy';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+    local('Gillroy Light'), url("../fonts/gilroylight.woff2") format('woff2'),
+    local('Gillroy Light'), url("../fonts/gilroylight.woff") format('woff');
+}
+/* Gillroy Extra Bold */
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src:
+    local('Gillroy ExtraBold'), url("../fonts/gilroyextrabold.woff2") format('woff2'),
+    local('Gillroy Light'), url("../fonts/gilroyextrabold.woff") format('woff');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+
+  color: #464646;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+.search-form__input {
+  border: none;
+  opacity: 0.3;
+}
+
+.search-form__input:hover {
+  opacity: 0.6;
+}
+
+.search-form__input:focus {
+  border-bottom: 2px solid #000;
+  opacity: 1;
+}
+
+.search-form__button {
+  /* display: none; */
+  background-color: transparent;
+  border: 2px solid #000;
+}
+
+.search-form__button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.search-form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-form__input:focus + .search-form__button {
+  display: inline-block;
+}
