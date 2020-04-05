@@ -1200,6 +1200,24 @@ img {
   left: 107px;
 }
 
+.range-controls .toggle:hover,
+.range-controls .toggle:focus {
+  top: -11px;
+  width: 22px;
+  height: 22px;
+}
+
+.range-controls .toggle-min:hover,
+.range-controls .toggle-min:focus {
+  left: -7px;
+}
+
+.range-controls .toggle-max:hover,
+.range-controls .toggle-max:focus {
+  left: 106px;
+}
+
+
 .price-controls {
   display: flex;
 
