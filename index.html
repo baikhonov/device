@@ -214,7 +214,7 @@
       <section class="contacts">
         <h2 class="section-heading">Контакты</h2>
         <p class="contacts__info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="#">
+        <a href="https://www.google.ru/maps" target="_blank">
           <img src="img/map.png" width="560" height="222" alt="Адрес организации: г. Москва, ул. Строителей, 15">
         </a>
         <a class="link contacts__link" href="#">Напишите нам</a>
@@ -229,7 +229,7 @@
         </a>
         <ul class="page-footer__user-navigation">
           <li>
-            <a class="page-footer__user-link page-footer__user-link--login" href="#">Войти</a>
+            <a class="page-footer__user-link" href="#">Войти</a>
           </li>
         </ul>
         <a class="page-footer__link page-footer__link--compare" href="#">Сравнить</a>
@@ -276,17 +276,19 @@
   <section class="modal modal--feedback">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-      <p class="feedback-form__group">
-        <label class="feedback-form__label" for="name-field">Ваше имя:</label>
-        <input class="feedback-form__input" id="name-field" name="name" type="text" placeholder="Имя Фамилия">
-      </p>
-      <p class="feedback-form__group">
-        <label class="feedback-form__label" for="field-email">Ваш e-mail:</label>
-        <input class="feedback-form__input" id="field-email" name="email" type="email" placeholder="email@example.com">
-      </p>
+      <div class="feedback-form__input-columns">
+        <p class="feedback-form__group">
+          <label class="feedback-form__label" for="name-field">Ваше имя:</label>
+          <input class="feedback-form__input" id="name-field" name="name" type="text" placeholder="Имя Фамилия" required>
+        </p>
+        <p class="feedback-form__group">
+          <label class="feedback-form__label" for="field-email">Ваш e-mail:</label>
+          <input class="feedback-form__input" id="field-email" name="email" type="email" placeholder="email@example.com" required>
+        </p>
+      </div>
       <p class="feedback-form__group">
         <label class="feedback-form__label" for="field-message">Текст письма:</label>
-        <textarea class="feedback-form__textarea" id="field-message" name="message" id="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <textarea class="feedback-form__textarea" id="field-message" name="message" id="" cols="30" rows="6" placeholder="В свободной форме" required></textarea>
       </p>
       <button class="feedback-form__button" type="submit">Отправить</button>
     </form>

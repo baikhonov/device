@@ -1904,11 +1904,41 @@ img {
 }
 
 .modal {
+  position: fixed;
+  z-index: 3;
+
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal--feedback {
+  top: 150px;
+  left: 50%;
+
   display: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 960px;
+  padding: 93px 100px 80px;
+  margin-left: -480px;
+}
+
+.feedback-form__input-columns {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 33px;
+}
+
+.feedback-form__input-columns .feedback-form__group {
+  width: 360px;
+  margin: 0;
 }
 
 .feedback-form__label {
+  display: block;
+  margin: 0;
+  margin-bottom: 7px;
+
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1919,6 +1949,9 @@ img {
 
 .feedback-form__input,
 .feedback-form__textarea {
+  width: 100%;
+  padding: 13px 17px;
+
   font: inherit;
   font-size: 14px;
   line-height: 18px;
@@ -1946,15 +1979,23 @@ img {
   background-color: transparent;
 }
 
-.feedback-form__input:focus:invalid {
+.feedback-form__input:focus:invalid,
+.feedback-form__textarea:focus:invalid {
   background-color: #f6dada;
 }
+
+.feedback-form__textarea {
+  min-height: 156px;
+}
+
 
 .feedback-form__button {
   position: relative;
   z-index: 1;
 
+  width: 200px;
   padding: 5px 10px;
+  margin-top: 20px;
 
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 18px;
@@ -1988,17 +2029,22 @@ img {
 }
 
 .feedback-form__button:active {
-  color: #f7e184;
-  background-color: #000000;
+  color: rgba(0, 0, 0, 0.3);
+  /* background-color: #000000; */
 }
 
 .modal__close-button {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+
   width: 55px;
   height: 55px;
   border: none;
   background-color: transparent;
   background-image: url("../img/modal-close.svg");
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .modal__close-button:hover,
@@ -2008,4 +2054,19 @@ img {
 
 .modal__close-button:active {
   opacity: 0.3;
+}
+
+.modal--map {
+  top: 50%;
+  left: 50%;
+
+  display: none;
+  width: 960px;
+  height: 559px;
+  margin-left: -480px;
+  margin-top: -280px;
+}
+
+.modal--map p {
+  margin: 0;
 }
