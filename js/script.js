@@ -132,3 +132,14 @@ servicesLinks.forEach(function(serviceLink) {
     }
   })
 });
+
+var searchInput = document.querySelector(".search-form__input");
+var searchButton = document.querySelector(".search-form__button");
+
+searchInput.addEventListener("focus", function(evt) {
+  searchButton.classList.add("search-form__button--show");
+});
+
+searchButton.addEventListener("click", function() {
+  this.classList.remove("search-form__button--show");
+});
