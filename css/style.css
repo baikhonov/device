@@ -1125,6 +1125,7 @@ img {
 
 .filter__form {
   padding-top: 69px;
+  padding-right: 70px;
 
   background-color: #efefef;
 }
@@ -1239,6 +1240,10 @@ img {
   left: 106px;
 }
 
+.range-controls .toggle:active {
+  transform: scale(1.1);
+}
+
 
 .price-controls {
   display: flex;
@@ -1319,6 +1324,10 @@ img {
   opacity: 0.6;
 }
 
+.filter__input--checkbox:focus + label {
+  outline: 1px dashed #000000;
+}
+
 .filter__input--checkbox:checked + label::before {
   position: absolute;
   left: -42px;
@@ -1360,6 +1369,10 @@ img {
 
   background-color: #000000;
   border-radius: 50%;
+}
+
+.filter__input--radio:focus + label {
+  outline: 1px dashed #000000;
 }
 
 
